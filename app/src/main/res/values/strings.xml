@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bookveonl</string>
+    <string name="txtten"></string>
+    <string name="ten">Nhập tên</string>
+    <string name="sdt">Nhập SĐT</string>
+    <string name="txtloaive">Loại vé</string>
+    <string name="txtsdt"></string>
+    <string name="thanhvien">Loại khách</string>
+    <string name="vip">VIP</string>
+    <string name="thuong">Thường</string>
+    <string name="giuong">Giường nằm</string>
+    <string name="ghe">Ghế ngồi</string>
+    <string name="dichvu">Dịch vụ(nước uống + thức ăn)</string>
+    <string name="thanhtoan">Thanh toán</string>
+    <string name="cancle">Hủy</string>
+    <string name="book">Thanh toán</string>
+    <string name="txtLan">Languages</string>
+    <string-array name="donvi">
+        <item>USD</item>
+        <item>VND</item>
+    </string-array>
+</resources>

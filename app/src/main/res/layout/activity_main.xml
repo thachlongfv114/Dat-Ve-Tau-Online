@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D1588E0"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/LayoutNhap"
+        android:layout_width="302dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#0008F04A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/twten"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/ten" />
+
+            <EditText
+                android:id="@+id/txtten"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/txtten" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/twsdt"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/sdt" />
+
+            <EditText
+                android:id="@+id/txtsdt"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/txtsdt" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/RadioLayout"
+        android:layout_width="399dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#0008F04A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutNhap">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/twthanhvien"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:paddingTop="20dp"
+                android:text="@string/thanhvien"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbtnvip"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:checked="false"
+                android:text="@string/vip" />
+
+            <RadioButton
+                android:id="@+id/rbtnthuong"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:checked="false"
+                android:text="@string/thuong" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/LoaiveLayout"
+        android:layout_width="396dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="23dp"
+        android:background="#0008F04A"
+        app:layout_constraintBottom_toTopOf="@+id/ThanhToanLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RadioLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/twloaive"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/txtloaive" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:layout_width="358dp"
+                android:layout_height="51dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdtngiuong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/giuong" />
+
+                <RadioButton
+                    android:id="@+id/rdtnghe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/ghe" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <CheckBox
+                android:id="@+id/ckbdichvu"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="@string/dichvu" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/ThanhToanLayout"
+        android:layout_width="314dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="16dp"
+        android:background="#0008F04A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoaiveLayout">
+
+        <TableRow
+            android:layout_width="341dp"
+            android:layout_height="84dp">
+
+            <TextView
+                android:id="@+id/twthanhtoan"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/thanhtoan"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spndonvi"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:entries="@array/donvi" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="205dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="15dp"
+        android:background="#0008F04A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ThanhToanLayout">
+
+        <TableRow
+            android:layout_width="222dp"
+            android:layout_height="33dp">
+
+            <Button
+                android:id="@+id/btnhuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancle"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnthanhtoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book"
+                android:textColor="#000000" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/RadioLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/taulua" />
+
+
+</android.support.constraint.ConstraintLayout>
